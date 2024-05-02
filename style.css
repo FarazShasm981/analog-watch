@@ -1,17 +1,32 @@
-body{
+body {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  height: 100%;
   width: 100%;
+  background-color: #ffdd00;
+}
+.container {
+  position: relative;
+  width: 500px;
+  height: 500px;
+  /* border: 1px solid red; */
+  border-radius: 50%;
+  box-shadow: 15px 15px 30px #665800,-15px -15px 30px #ffff00 ;
 }
 #clockContainer {
-  position: relative;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
   margin: auto;
   background: url(./image/clock.png) no-repeat;
-  height: 450px;
-  width: 450px;
+  height: 400px;
+  width: 400px;
+  border: 1px solid black;
   background-size: 100%;
+  border-radius: 50%;
+  box-shadow:inset 15px 15px 30px #665800,inset -15px -15px 30px #fafa0382 ;
 }
 #hours,
 #minutes,
@@ -24,7 +39,7 @@ body{
 #hours {
   height: 22%;
   width: 1.2%;
-  top: 27.5%;
+  top: 27.2%;
   left: 49.46%;
   /* background: wheat; */
   /* display: none; */
@@ -32,14 +47,17 @@ body{
 #minutes {
   height: 27%;
   width: 1%;
-  top: 22.5%;
-  left: 49.55%;
+  top: 21.58%;
+  left: 49%;
+  /* background: paleturquoise; */
   /* display: none; */
 }
 #seconds {
   height: 32%;
   width: 1%;
-  top: 17.5%;
-  left: 49.55%;
+  top: 16.69%;
+  left: 49.3%;
   /* background: palegreen; */
+  /* opacity: 0.7; */
+  /* display: none; */
 }
